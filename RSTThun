@@ -1,0 +1,3 @@
+# !bin/bash
+
+(cd $HOME/strato/zeus && docker compose down thunderstorm-web && docker compose up -d thunderstorm-web)

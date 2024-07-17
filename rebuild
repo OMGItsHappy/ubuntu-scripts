@@ -1,0 +1,26 @@
+#!/bin/bash
+
+checkError() {
+    if [[ $? -ne 0 ]] ; then
+        echo "Error"
+        exitAndClean
+    fi
+}
+
+exitAndClean() {
+    popd
+    exit 1
+}
+
+if [[ -z "$1" ]] ; then
+    echo "Please provide a service name"
+    exit 1
+fi
+
+pushd ~/strato/zeus
+
+docker compose down "$1"
+checkError
+docker compose build --no-cache "$1"
+checkError
+docker compose up -d "$1"
