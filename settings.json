@@ -1,0 +1,49 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.ruff": "explicit",
+    "source.organizeImports.ruff": "explicit"
+  },
+  "workbench.editor.wrapTabs": true,
+  "editor.formatOnSave": true,
+  "git.allowForcePush": true,
+  "editor.cursorSurroundingLines": 15,
+  // - Languages
+  // -- Python
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  // -- Web (Javascript/Html/CSS)
+  "eslint.options": {
+    "extensions": [".html", ".js", ".ts", ".vue"]
+  },
+  "eslint.validate": ["html", "javascript", "vue"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // -- Other
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.maxColumn": 100,
+  "editor.rulers": [100],
+  "editor.wordWrapColumn": 100,
+  "files.autoSave": "onFocusChange",
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-turbo",
+  "git.autofetch": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "cSpell.userWords": ["fucntion"],
+  "diffEditor.renderSideBySide": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "autoHide.autoHidePanel": false,
+  "autoHide.panelDelay": 100,
+  "workbench.sideBar.location": "right"
+}
