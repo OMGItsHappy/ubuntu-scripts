@@ -1,0 +1,8 @@
+#!/bin/bash
+curl --request POST -k \
+  --url https://localhost:8443/auth/realms/thunderstorm/protocol/openid-connect/token \
+  --header 'Content-Type: application/x-www-form-urlencoded' \
+  --data grant_type=password \
+  --data client_id=user-scripts \
+  --data username=dev \
+  --data password=password | jq .access_token -r | while read n; do echo "Bearer $n"; done;

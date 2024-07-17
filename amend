@@ -1,0 +1,12 @@
+#!/bin/bash
+git add .
+git commit --amend
+
+noPush="-np"
+if [[ "$1" == "$noPush" ]]
+then
+    echo "Did not push to origin"
+else
+    echo "pushed"
+    git push -f
+fi
