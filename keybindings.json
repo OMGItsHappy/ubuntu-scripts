@@ -24,7 +24,7 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+g",
+    "key": "ctrl+m",
     "command": "workbench.action.gotoLine",
     "when": "editorFocus"
   },
@@ -79,5 +79,9 @@
   {
     "key": "ctrl+shift+w",
     "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
   }
 ]
